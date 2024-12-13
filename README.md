@@ -25,18 +25,24 @@ This setup file will be used by the TurtleBot's Nav2 package. It includes the MP
 
 
 
-Challenge TurtleBot3
-# Phase 1: 
-result: failure
-comment: Follow_me script does not follow entirely. Inversed direction in reverse when person too close to robot.
+# Challenge TurtleBot3
+## Phase 1
+- **Result:** Failure  
+- **Comment:** 
+  - `Follow_me` script does not follow entirely. 
+  - Inversed direction in reverse when a person is too close to the robot.
+---
+## Phase 2
+- **Result:** Mitigated  
+- **Static Obstacle:** Yes  
+- **Dynamic Obstacle:** Yes  
+- **Blocked Path:** Yes  
+- **Comment:** 
+  - `Goto` works perfectly but is only usable with Rviz IHM. 
+  - `Goto_pose` topic command is not working.
+---
+## Phase 3
+- **Result:** Failure  
+- **Comment:** 
+  - Same as Phase 2, not yet implemented in the launch file.
 
-# Phase 2: 
-result: mitigated
-static_obtacle: yes
-dynamic_obtacle: yes
-blocked_path: yes
-comment: Goto working perfectly, but only usable with Rviz IHM. Goto_pose topic command not working.
-
-# Phase 3: 
-result: failure
-comment: Same as Phase 2 : not yet implemented in launch file.
