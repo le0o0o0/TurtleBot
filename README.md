@@ -23,3 +23,20 @@ This setup file will be used by the TurtleBot's Nav2 package. It includes the MP
    - Follow the instructions under "1- Setup Rviz clicked point".
    - Follow the instructions under "2- Run Dynamic Object Following in Nav2 Simulation".
 
+
+
+Challenge TurtleBot3
+# Phase 1: 
+result: failure
+comment: Follow_me script does not follow entirely. Inversed direction in reverse when person too close to robot.
+``
+# Phase 2: 
+result: mitigated
+static_obtacle: yes
+dynamic_obtacle: yes
+blocked_path: yes
+comment: Goto working perfectly, but only usable with Rviz IHM. Goto_pose topic command not working.
+``
+# Phase 3: 
+result: failure
+comment: Same as Phase 2 : not yet implemented in launch file.
